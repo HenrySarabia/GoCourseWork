@@ -1,0 +1,79 @@
+* {
+    box-sizing: border-box;
+}
+
+.wrapper {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
+
+    font-weight: bold;
+    text-align: center;
+}
+
+.wrapper > * {
+    padding: 10px;
+    flex: 1 100%;
+}
+
+.header {
+    background: #6A729C;
+}
+
+.footer {
+    background: #32364A;
+}
+
+.main {
+    text-align: center;
+    background: url("http://i.imgur.com/y4cxUBF.jpg") center no-repeat;
+    /*background: url("../files/bgPhoto.jpg") center no-repeat;*/
+    background-size: cover;
+    height: 20em;
+}
+
+.aside-1 {
+    background: #4A4F6D;
+}
+
+.aside-2 {
+    background: #4A4F6D;
+}
+
+h3 {
+    text-align: center;
+}
+
+a:visited {
+    color: #1004E7
+}
+a:hover {
+    color: #342BD3
+}
+
+@media all and (min-width: 600px) {
+    .main  {height: 30em;}
+    .aside {flex: 1 auto; }
+    .aside-1 {text-align:left; }
+}
+
+@media all and (min-width: 800px) {
+    .main {
+        flex: 17 0px;
+        height: 50em;
+    }
+    .aside   { flex: 3;  }
+    .aside-1 { order: 1; text-align: left; }
+    .main    { order: 2; }
+    .aside-2 { order: 3; }
+    .footer  { order: 4; }
+}
+
+body {
+    padding: 2em;
+}
