@@ -1,0 +1,36 @@
+body {
+    background-color: #000000;
+    font-family: Lucida Console, sans-serif;
+    text-align: center;
+}
+h1 {
+    color: #cb0d12;
+    padding: 4px;
+    border: 2px solid #cb0d12;
+    font-family: Lucida Console, sans-serif;
+}
+
+p {
+    color: #FFFFFF
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    height: 100%;
+}
+
+div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    height: 25rem;
+}
