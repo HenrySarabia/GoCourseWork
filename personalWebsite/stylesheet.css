@@ -1,0 +1,97 @@
+* {
+    box-sizing: border-box;
+}
+
+/*
+=================================================
+HEADER
+=================================================
+*/
+
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 5em;
+}
+
+ul {
+    display: none;
+}
+
+h1 {
+    color: #05579d;
+    font-family: Lucida Console, sans-serif;
+    font-size: 36px;
+    text-transform: uppercase;
+    text-decoration: underline;
+    padding-bottom: 19px;
+}
+
+header h1 {
+    text-align: center;
+    padding-bottom: 0px;
+    text-decoration: none;
+}
+
+/*
+==================================================
+MAIN IMAGE
+==================================================
+*/
+
+figure {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+figcaption {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h2, h3 {
+    color: #FFFFFF
+}
+
+h2 {
+    font-family: Lucida Console, sans-serif;
+    font-size: 55px;
+    font-weight: bold;
+    padding-top: 60px;
+    padding-bottom: 29px;
+}
+
+.imageText {
+    text-align: center;
+}
+
+h3 {
+    font-family: monospace, sans-serif;
+    font-size: 20px;
+    line-height: 35px;
+    max-width: 492px;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+/*
+====================================================
+MEDIA QUERIES
+====================================================
+*/
+
+/*GREATER THAN 768px*/
+@media all and (min-width: 768px) {
+
+    .mainImage {
+        width: 100%;
+        height: 600px;
+        background: url("https://lh5.googleusercontent.com/Ts2gfYYKGF-whbA2NotmEouIAL6NbMvcfuH8ikrEJgXK7jW-bWL9dm1cL8A9G9t_F3wboA=w2536-h1219") 30% no-repeat;
+        background-size: cover;
+    }
+}
