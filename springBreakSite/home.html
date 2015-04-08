@@ -5,11 +5,11 @@
     <meta charset="UTF-8">
     <link type="text/css" rel="stylesheet" href="stylesheet.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Spring Break Website</title>
+    <title>Write-it</title>
 </head>
 <body>
     <header id="topHeader">
-        <h1>Spring Break Website</h1>
+        <h1>Write-it</h1>
     </header>
     <section>
         <h3>Hello, {{.}}!</h3>
@@ -17,10 +17,12 @@
     <section>
         <h3>Leave me a message</h3>
         <form action="/create_message" method="post" accept-charset="UTF-8">
+            <input type="text" name="messageString" placeholder="Enter message here...">
             <input type="submit" value="Create Message">
         </form>
         <h3>Submit a link to me</h3>
         <form action="/submit_link" method="post" accept-charset="UTF-8">
+            <input type="text" name="linkString" placeholder="Enter complete link here...">
             <input type="submit" value="Submit Link">
         </form>
     </section>
