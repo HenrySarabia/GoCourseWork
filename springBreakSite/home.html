@@ -12,7 +12,7 @@
         <h1>Write-it</h1>
     </header>
     <section>
-        <h3>Hello, {{.}}!</h3>
+        <h3>Hello!</h3>
     </section>
     <section>
         <h3>Leave me a message</h3>
@@ -25,6 +25,17 @@
             <input type="text" name="linkString" placeholder="Enter complete link here...">
             <input type="submit" value="Submit Link">
         </form>
+    </section>
+    <section>
+        <h3>Past Messages</h3>
+        {{range .}}
+            {{with .Author}}
+                <p><b>{{.}}</b> says:</p>
+            {{else}}
+                <p>Anon says:</p>
+            {{end}}
+            <pre>{{.Content}}</pre>
+        {{end}}
     </section>
 </body>
 </html>

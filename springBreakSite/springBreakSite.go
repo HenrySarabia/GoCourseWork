@@ -82,8 +82,6 @@ func messageHandler(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 
-	w.Header().Set("Header 2", "Sample")
-	w.WriteHeader(http.StatusFound)
 
 	input := userInput{
 		Author: u.String(),
@@ -97,5 +95,6 @@ func messageHandler(w http.ResponseWriter, r *http.Request) {
 		http.Error(w, err.Error(), http.StatusInternalServerError)
 		return
 	}
+
 	http.Redirect(w, r, "/", http.StatusFound)
 }
