@@ -66,7 +66,7 @@ func homeHandler(w http.ResponseWriter, r *http.Request){
 	}
 }
 
-//Incomplete. This will be the handler that saves the user's message to the datastore
+//This will be the handler that saves the user's message to the datastore
 func messageHandler(w http.ResponseWriter, r *http.Request) {
 	c := appengine.NewContext(r)
 	u := user.Current(c)

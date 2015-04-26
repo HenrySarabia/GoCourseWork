@@ -2,6 +2,11 @@
     box-sizing: border-box;
 }
 
+body {
+    background: url("http://i.imgur.com/VZYIVRn.jpg") 30% no-repeat;
+
+}
+
 /*
 =================================================
 HEADER
@@ -55,7 +60,7 @@ figcaption {
 }
 
 h2, h3 {
-    color: #FFFFFF
+    color: #FFFFFF;
 }
 
 h2 {
@@ -91,7 +96,9 @@ MEDIA QUERIES
     .mainImage {
         width: 100%;
         height: 600px;
-        background: url("https://lh5.googleusercontent.com/Ts2gfYYKGF-whbA2NotmEouIAL6NbMvcfuH8ikrEJgXK7jW-bWL9dm1cL8A9G9t_F3wboA=w2536-h1219") 30% no-repeat;
+       background: url("http://i.imgur.com/6KNvenU.jpg") 30% no-repeat;
+
         background-size: cover;
+        outline: solid darkblue 4px;
     }
 }
